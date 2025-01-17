@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'courses#index'
+  get "courses/index"
   resources :users
   get "landing/index"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
