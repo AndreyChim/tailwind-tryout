@@ -4,4 +4,5 @@
   <h4><%= @item.location %></h4>
   <p><a href='#'> <%= @notice %> </a></p>
   <%= render(DiscountComponent.new(item: @item)) %>
+  <%= EnrolleeComponent.new.total_enrollees(@item) %>
 </div>
