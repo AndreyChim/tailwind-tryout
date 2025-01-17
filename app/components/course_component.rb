@@ -1,7 +1,7 @@
-# frozen_string_literal: true
-
 class CourseComponent < ViewComponent::Base
-  def initialize(course:)
-    @course = course
+  with_collection_parameter :item
+
+  def initialize(item:)
+    @item = item
   end
 end
