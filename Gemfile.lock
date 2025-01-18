@@ -153,7 +153,7 @@ GEM
     parser (3.3.7.0)
       ast (~> 2.4.1)
       racc
-    psych (5.2.2)
+    psych (5.2.3)
       date
       stringio
     puma (6.5.0)
@@ -320,4 +320,4 @@ DEPENDENCIES
   web-console
 
 BUNDLED WITH
-   2.6.2
+   2.6.3
