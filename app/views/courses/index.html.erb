@@ -1,1 +1,7 @@
-<%= render(CourseComponent.with_collection(Course.all, notice: "Buy Me")) %>
+<%= render ListComponent.new do |c| %>
+    <% c.with_header do %>
+    <%= link_to "List of Available Courses", root_path %>
+    <% end %>
+    <%= c.with_title(title: "First title") %>
+    <%= c.with_title(title: "Second title!") %>
+  <% end %>
