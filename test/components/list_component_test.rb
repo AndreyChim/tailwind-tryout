@@ -1,12 +1,15 @@
-# frozen_string_literal: true
-
 require "test_helper"
+require "view_component/test_case"
 
 class ListComponentTest < ViewComponent::TestCase
-  def test_component_renders_something_useful
-    # assert_equal(
-    #   %(<span>Hello, components!</span>),
-    #   render_inline(ListComponent.new(message: "Hello, components!")).css("span").to_html
-    # )
+  def test_renders_slots_with_content
+  render_inline(ListComponent.new) do |component|
+  component.header { "A Test List" }
+  component.titles [{title: 'Test title 1'}, {title: 'Test title 2'}]
+  end
+
+  assert_selector("h1", text: "A Test List")
+  assert_text("Test title 1")
+  assert_text("Test title 2")
   end
 end
