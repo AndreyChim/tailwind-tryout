@@ -1,10 +1,9 @@
-<%= turbo_stream_from "messages" %>
-<div id="messages">
- </div>
 <div>
   <h1 class="text-xl font-bold">Messages</h1>
 
-  <div class="max-w-2xl">
+  <%= turbo_stream_from "messages" %>
+
+  <div id="messages" class="max-w-2xl">
     <%= render MessageComponent.with_collection(@messages) %>
   </div>
   
