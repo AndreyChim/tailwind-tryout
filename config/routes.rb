@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root "messages#index"
 
-  resources :messages, only: %i[create index]
+  resources :messages
   get "messages/index"
   # root 'courses#index'
   get "courses/index"
