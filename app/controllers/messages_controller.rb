@@ -12,7 +12,7 @@ class MessagesController < ApplicationController
     
     respond_to do |format|
     format.html { redirect_to messages_path }
-    format.turbo_stream
+    format.turbo_stream { redirect_to messages_path }
     end
   end
 end
