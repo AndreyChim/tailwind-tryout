@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   root "messages#index"
 
   resources :messages
+  resources :quotes
   get "messages/index"
+  get "quotes/index"
   # root 'courses#index'
   get "courses/index"
   resources :users
