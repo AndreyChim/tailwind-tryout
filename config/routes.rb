@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root "messages#index"
+  # root "messages#index"
+  root "pages#home"
 
   resources :messages
   resources :quotes
