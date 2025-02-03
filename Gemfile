@@ -8,10 +8,6 @@ gem 'psych', '~> 5.2.3'
 
 gem 'foreman'
 gem 'simple_form'
-<<<<<<< HEAD
-=======
-
->>>>>>> 486e368745edb11bc28bb2e239542f7d77c8ea20
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 #gem "rails", "~> 7.2.2", ">= 7.2.2.1"

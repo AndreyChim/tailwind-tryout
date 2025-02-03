@@ -1,0 +1,16 @@
+{
+    "name": "@hotwired/tailwind-tryout",
+    "version": "3.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+      "start": "node server.js"
+    },
+    "engines": {
+      "node": ">=11"
+    },
+    "dependencies": {
+      "@hotwired/stimulus": "^3.2.2"
+    }
+  }
