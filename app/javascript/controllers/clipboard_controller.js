@@ -8,10 +8,21 @@ export default class extends Controller {
   copy_old() {
      navigator.clipboard.writeText(this.sourceTarget.value)
   }
+
+  // v2 - copy action attached to <a> link, input from a <textarea>
+  copy(event) {
+    event.preventDefault()
+    this.sourceTarget.select()
+    document.execCommand("copy")
+  }
+
+  static classes = [ "supported" ]
+
+  connect() {
+    navigator.permissions.query({ name: 'clipboard-write' }).then( (result) => {
+      if (result.state == "granted") {
+        this.element.classList.add(this.supportedClass)
+      }
+    })
+  }
 }
-  //v2 - copy action attached to <a> link, input from a <textarea>
-//   copy(event) {
-//     event.preventDefault()
-//     this.sourceTarget.select()
-//     document.execCommand("copy")
-//   }
