@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  root 'pages#home'
-  # root "messages#index"
+  get "content_loaders", to: "content_loaders#index"
+  get "slideshows", to: "slideshows#index"
+  root "clipboards#index"
+  get "clipboards/index"
 
   resources :messages
   resources :quotes
