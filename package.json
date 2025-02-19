@@ -5,7 +5,8 @@
     "license": "MIT",
     "private": true,
     "scripts": {
-      "start": "node server.js"
+      "start": "node server.js",
+      "build:css": "tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.css --minify"
     },
     "engines": {
       "node": ">=11"
