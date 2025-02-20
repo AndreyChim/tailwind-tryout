@@ -4,14 +4,13 @@
     "main": "index.js",
     "license": "MIT",
     "private": true,
-    "scripts": {
-      "start": "node server.js",
-      "build:css": "tailwindcss -i ./app/assets/stylesheets/application.tailwind.css -o ./app/assets/builds/application.css --minify"
-    },
     "engines": {
-      "node": ">=11"
+        "node": ">=11"
     },
     "dependencies": {
-      "@hotwired/stimulus": "^3.2.2"
+        "@hotwired/stimulus": "^3.2.2"
+    },
+    "devDependencies": {
+        "tailwindcss": "^4.0.7"
     }
-  }
+}

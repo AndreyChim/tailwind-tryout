@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get "slideshows", to: "slideshows#index"
   root "clipboards#index"
   get "clipboards/index"
+  get "states/index"
 
   resources :messages
   resources :quotes

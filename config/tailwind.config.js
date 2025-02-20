@@ -5,9 +5,7 @@ module.exports = {
     './public/*.html',
     './app/helpers/**/*.rb',
     './app/javascript/**/*.js',
-    './app/views/**/*.{erb,haml,html,slim}',
-    "./src/**/*.{html,js}",
-    './app/components/*.{erb,rb}'
+    './app/views/**/*.{erb,haml,html,slim}'
   ],
   theme: {
     extend: {
@@ -20,13 +18,5 @@ module.exports = {
     // require('@tailwindcss/forms'),
     // require('@tailwindcss/typography'),
     // require('@tailwindcss/container-queries'),
-  ],
-  fontFamily: {
-    serif: ["Times", "serif"],
-  },
-  extend: {
-    spacing: {
-      "8xl": "108rem",
-    },
-  },
+  ]
 }
